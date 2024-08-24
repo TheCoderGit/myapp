@@ -94,7 +94,7 @@ class QrDashboardMainSmall extends StatelessWidget {
                           color: Colors.green.shade50,
                           child: ListTile(
                             title: const Text("Aly Ghobashy"),
-                            subtitle: const Text("Computer Scince - Grade 4"),
+                            subtitle: const Text("Computer Scinse - Grade 4"),
                             leading: const Icon(
                               Icons.person,
                               color: Colors.blue,
@@ -167,6 +167,8 @@ class QrDashboardMainSmall extends StatelessWidget {
         items: const [
           BottomNavigationBarItem(
               icon: Icon(Icons.qr_code), label: "QR attendance"),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.device_unknown), label: "Devices"),
           BottomNavigationBarItem(
               icon: Icon(Icons.settings), label: "settings"),
         ],

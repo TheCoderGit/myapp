@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart';
 
 class QRCodeScanner extends StatefulWidget {
+  const QRCodeScanner({super.key});
+
   @override
-  _QRCodeScannerState createState() => _QRCodeScannerState();
+  State<QRCodeScanner> createState() => _QRCodeScannerState();
 }
 
 class _QRCodeScannerState extends State<QRCodeScanner> {
@@ -21,7 +23,7 @@ class _QRCodeScannerState extends State<QRCodeScanner> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Scan QR Code')),
+      appBar: AppBar(title:const  Text('Scan QR Code')),
       body: Column(
         children: <Widget>[
           Expanded(
@@ -36,7 +38,7 @@ class _QRCodeScannerState extends State<QRCodeScanner> {
             child: Center(
               child: (result != null)
                   ? Text('Scanned number: ${result!.code}')
-                  : Text('Scan a code'),
+                  : const Text('Scan a code'),
             ),
           )
         ],

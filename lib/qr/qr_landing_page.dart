@@ -49,7 +49,7 @@ and the second is for scanning the QR code''',
               minWidth: MediaQuery.of(context).size.width * 0.8,
               onPressed: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => QRCodeScanner()));
+                    MaterialPageRoute(builder: (context) => const QRCodeScanner()));
               },
               child: const Text("scan a Code")),
         ],

@@ -5,7 +5,7 @@ class QRCodeGenerator extends StatefulWidget {
   const QRCodeGenerator({super.key});
 
   @override
-  _QRCodeGeneratorState createState() => _QRCodeGeneratorState();
+  State<QRCodeGenerator> createState() => _QRCodeGeneratorState();
 }
 
 class _QRCodeGeneratorState extends State<QRCodeGenerator> {
